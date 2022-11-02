@@ -12,22 +12,20 @@ int main() {
 
     srand(time(0));
     while (hasRun(values, 20) == false) {
-        cout << displayRun(values, 20) << " ";
-
-        for(i = 0; i < 20; i++) {
-        values[i] = rand() % 6 + 1;
-        
-        cout << values[i] << " ";
+        for (i = 0; i < 20; i++) {
+            values[i] = rand() % 6 + 1;
         }
     }
-    
+    return 0;
 }
+
 void displayRun(int values[], int size) {
     int values[20], i;
     for(i = 0; i < 20; i++) {
         values[i] = rand() % 6 + 1;
+        return values;
     }
-    return values[i];
+    
 }
 
 bool hasRun(int values[], int size) {
